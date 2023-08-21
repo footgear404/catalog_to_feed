@@ -15,3 +15,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "catalog_to_feed"
 include(":app")
+include(":core")
+include(":core:ui")
+include(":feature:home")
