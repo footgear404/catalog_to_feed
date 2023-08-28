@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/HomeFragment"
         android:name="com.trinity.catalog_to_feed.presentation.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home"/>
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
 
 </navigation>

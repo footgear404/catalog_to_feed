@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.Card.Title" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/accent</item>
+    </style>
+
+    <style name="TextAppearance.Card.Description" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:alpha">0.7</item>
+    </style>
+
+</resources>
