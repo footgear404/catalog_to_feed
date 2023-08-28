@@ -6,36 +6,7 @@
     android:layout_height="match_parent"
     android:background="#F4F5FA">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_margin="35dp"
-        android:background="@drawable/rounded_shape"
-        android:elevation="20dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/title"
-            style="@style/TextAppearance.Card.Title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:text="Яндекс Маркет" />
-
-        <TextView
-            android:id="@+id/description"
-            style="@style/TextAppearance.Card.Description"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:lines="2"
-            android:paddingStart="20dp"
-            android:text="Какой-то текст для описания карточки" />
-    </LinearLayout>
+    <include layout="@layout/rectangle_badge" />
 
     <Button
         android:id="@+id/button"

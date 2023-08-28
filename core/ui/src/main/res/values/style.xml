@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Catalog_to_feed.Button.Primary" parent="Widget.Material3.Button.ElevatedButton">
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="rippleColor">@color/accent</item>
+    </style>
+</resources>
