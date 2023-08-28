@@ -1,20 +1,17 @@
 plugins {
-    id(Plugins.application)
+    id(Plugins.library)
     id(Plugins.android)
 }
 
 android {
-    namespace = "com.trinity.catalog_to_feed"
+    namespace = "com.trinity.feature.home"
     compileSdk = Configs.compileSdk
 
     defaultConfig {
-        applicationId = Configs.applicationId
         minSdk = Configs.minSdk
-        targetSdk = Configs.targetSdk
-        versionCode = Configs.versionCode
-        versionName = Configs.versionName
 
         testInstrumentationRunner = Configs.testInstrumentationRunner
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -33,16 +30,15 @@ android {
     kotlinOptions {
         jvmTarget = Configs.jvmTarget
     }
+
     buildFeatures {
         viewBinding = true
     }
 }
 
 dependencies {
-
     /* Modules */
-    implementation(project(":feature:home"))
-    implementation(project(":core:ui"))
+
 
     /* Libs */
     implementation(Dependencies.Core.core_ktx)
