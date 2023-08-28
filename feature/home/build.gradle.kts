@@ -1,16 +1,16 @@
 plugins {
-    id("com.android.library")
-    id("org.jetbrains.kotlin.android")
+    id(Plugins.library)
+    id(Plugins.android)
 }
 
 android {
-    namespace = "com.trinity.catalog_to_feed"
-    compileSdk = 33
+    namespace = "com.trinity.feature.home"
+    compileSdk = Configs.compileSdk
 
     defaultConfig {
-        minSdk = 26
+        minSdk = Configs.minSdk
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = Configs.testInstrumentationRunner
         consumerProguardFiles("consumer-rules.pro")
     }
 
@@ -24,11 +24,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = Configs.javaVersion
+        targetCompatibility = Configs.javaVersion
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = Configs.jvmTarget
     }
 
     buildFeatures {
@@ -37,13 +37,17 @@ android {
 }
 
 dependencies {
+    /* Modules */
 
-    implementation("androidx.core:core-ktx:1.10.1")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.9.0")
-    implementation("androidx.navigation:navigation-fragment-ktx:2.6.0")
-    implementation("androidx.navigation:navigation-ui-ktx:2.6.0")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    /* Libs */
+    implementation(Dependencies.Core.core_ktx)
+    implementation(Dependencies.Core.appcompat)
+    implementation(Dependencies.Core.material)
+    implementation(Dependencies.Core.constraintlayout)
+    implementation(Dependencies.Core.navigation_fragment_ktx)
+    implementation(Dependencies.Core.navigation_ui_ktx)
+    testImplementation(Dependencies.Core.junit)
+    androidTestImplementation(Dependencies.Core.ext_junit)
+    androidTestImplementation(Dependencies.Core.espresso_core)
 }
