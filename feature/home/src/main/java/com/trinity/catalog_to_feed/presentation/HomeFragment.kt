@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
-import com.trinity.catalog_to_feed.databinding.FragmentHomeBinding
+import com.trinity.feature.home.databinding.FragmentHomeBinding
 
 
 class HomeFragment : Fragment() {
